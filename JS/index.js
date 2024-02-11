@@ -7,6 +7,23 @@ const inputValue = document.getElementById('kick');
 const result = document.getElementById('result');
 const btnRestart = document.getElementById('btn-restart');
 
+const numberDraw = Math.round(Math.random() * 10)
+
 function handleSubmit(e) {
-    alert('Ola')
+    e.preventDefault();
+
+    const kick = inputValue.value;
+
+    if (!kick){
+        alert('Digite algum valor!');
+        return;
+    }
+
+    if (numberDraw == kick){
+        alert('ACERTOU!')
+    }else if (numberDraw > kick){
+        alert('O número é maior!')
+    }else if (numberDraw < kick){
+        alert('O número é menor!')
+    }
 };
