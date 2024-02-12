@@ -1,6 +1,6 @@
 .result-box.result-box-default {
     background: var(--white);
-    color: var(--blue);
+    color: #00348A;
 }
 
 .result-correct-answear {
